@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '37hfjzc2xwp%_^^))ou36fsx)3fl@ix+0n2a7!zo%!-gk*^3@&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [djangoapibasic.azurewebsites.net]
+ALLOWED_HOSTS = ['djangoapibasic.azurewebsites.net']
 
 
 
