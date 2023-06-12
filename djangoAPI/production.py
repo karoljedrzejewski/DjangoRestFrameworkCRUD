@@ -3,7 +3,7 @@ import os
 
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
+ALLOWED_HOSTS = ['azuredjangoapi.azurewebsites.net']
 
 # WhiteNoise configuration
 MIDDLEWARE = [                                                                   
@@ -17,6 +17,3 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',                      
     'django.middleware.clickjacking.XFrameOptionsMiddleware',                    
 ]
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
