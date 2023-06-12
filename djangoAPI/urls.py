@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from API import views
 
 urlpatterns = [
-    path('hello/', views.HelloView.as_view(), name='hello'),
+    path('', views.HelloView.as_view(), name='hello'),
     path('posts/', views.PostList.as_view(), name='post_list'),
     path('posts/<int:pk>/', views.PostDetail.as_view(), name='post_detail'),
     path('auth/register/', views.RegisterAPI.as_view()),
